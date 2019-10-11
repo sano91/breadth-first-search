@@ -12,6 +12,11 @@ public class UserNode {
     private String firstName;
     private String lastName;
 
+
+
+
+
+
     private Set<UserNode> friends = new HashSet<>();
 
     public UserNode(String firstName, String lastName) {
@@ -36,17 +41,11 @@ public class UserNode {
         return firstName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
 
     public String getLastName() {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
 
     public String toString() {
         return firstName + "_" + lastName + " (" + id + ")";
